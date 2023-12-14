@@ -11,6 +11,9 @@ Soyez attentifs à l'ordre d'import :
   6. Les composant d'interface (Components)
 */
 
+/* Vendors */
+@import "vendors/normalize.css";
+
 /* Utils */
 @import "utils/variables.css";
 
