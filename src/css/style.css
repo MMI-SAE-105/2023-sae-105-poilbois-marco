@@ -11,5 +11,8 @@ Soyez attentifs à l'ordre d'import :
   6. Les composant d'interface (Components)
 */
 
+/* Utils */
+@import "utils/variables.css";
+
 /* Layout */
 @import "layout/header.css";

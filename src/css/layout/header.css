@@ -1,12 +1,17 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-color: var(--white);
 }
 
 .header__end {
-    margin-right: 10px;
+    margin-right: 40px;
     display: flex;
     gap: 25px;
     align-items: center;
