@@ -1,0 +1,30 @@
+.navbar {
+    position: absolute;
+    background-color: var(--saumon);
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar__icone {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    padding-bottom: 500px;
+}
+
+.navbar__list {
+    list-style: none;
+}
+
+.navbar__list li a { 
+    text-decoration: none;
+    font-size: var(--title-xxxl);
+    color: var(--brown);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}

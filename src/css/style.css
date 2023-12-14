@@ -26,3 +26,6 @@ Soyez attentifs à l'ordre d'import :
 /* Layout */
 @import "layout/header.css";
 @import "layout/footer.css";
+
+/* Components */
+@import "components/menu.css";

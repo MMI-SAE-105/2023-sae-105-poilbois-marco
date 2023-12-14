@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I Am Pei</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body>
+<body x-data="{ isOpen: false }">
 
     <header class="header">
         <div class="header__start">
@@ -18,23 +19,27 @@
             <a href="#">
                 <img src="/public/icones/icon_drapeau_angleterre.svg" alt="flag-en">
             </a>
-            <a href="#">
+            <a href="#"
+                @click="isOpen = !isOpen"
+            >
                 <img src="/public/icones/icon_menu_burger.svg" alt="menu-burger">
             </a>
         </div>
 
-        <!-- <nav>
-            <a href="#">
-                <img src="/public/icones/icon_croix.svg" alt="annule">
-            </a>
-            <ul>
+        <nav class="navbar" x-show="isOpen">
+            <ul class="navbar__list">
                 <li><a href="#">Billetterie</a></li>
                 <li><a href="#">Oeuvres</a></li>
                 <li><a href="#">Architecte</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Mentions légales</a></li>
             </ul>
-        </nav> -->
+            <a class="navbar__icone" href="#"
+                @click="isOpen = !isOpen"
+            >
+                <img src="/public/icones/icon_croix.svg" alt="annule">
+            </a>
+        </nav>
     </header>
 
     <section>
