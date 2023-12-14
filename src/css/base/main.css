@@ -1,0 +1,28 @@
+body {
+    font-family: var(--font-Nunito);
+    font-size: var(--text-rg);
+    color: var(--black);
+}
+
+h1 {
+    font-family: var(--font-Batang);
+    font-size: var(--title-xxxl);
+    color: var(--brown);
+}
+
+h2 {
+    font-size: var(--title-xl);
+    color: var(--dark);
+}
+
+h3 {
+    font-size: var(--text-lg);
+}
+
+button {
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
