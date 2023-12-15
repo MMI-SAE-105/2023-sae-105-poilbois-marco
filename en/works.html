@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body x-data="{ isOpen: false }">
+
+    <header class="header">
+        <div class="header__start">
+            <a href="/en/index.html">
+                <img src="/public/icones/logo.svg" alt="logo">
+            </a>
+        </div>
+        <div class="header__end">
+            <a href="/fr/oeuvres.html">
+                <img src="/public/icones/icon_drapeau_france.svg" alt="flag-fr">
+            </a>
+            <a href="#"
+                @click="isOpen = !isOpen"
+            >
+                <img src="/public/icones/icon_menu_burger.svg" alt="menu-burger">
+            </a>
+        </div>
+
+        <nav class="navbar" x-show="isOpen">
+            <ul class="navbar__list">
+                <li>
+                    <a href="/en/ticketing.html">
+                        Ticketing
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/works.html">
+                        Works
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/architect.html">
+                        Architect
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/contact.html">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/mentions.html"">
+                        Legal Notice
+                    </a>
+                </li>
+            </ul>
+            <a class="navbar__icone" href="#"
+                @click="isOpen = !isOpen"
+            >
+                <img src="/public/icones/icon_croix.svg" alt="annule">
+            </a>
+        </nav>
+    </header>
+
+    <section class="section">
+        <header class="section__header">
+            <h1>Works</h1>
+            <ul class="carousel">
+                <li class="carousel__item section__link">
+                    <a href="#">
+                        <img src="/public/img/National_Gallery_of_Art.webp" 
+                            alt="">
+                        <p>
+                            National Gallery
+                            of Art, USA,
+                            March 17, 1941
+                        </p> 
+                    </a>
+                </li>
+                <li class="carousel__item section__link">
+                    <a href="#">
+                        <img src="/public/img/National_Center_for_Atmospheric_Research.webp" 
+                        alt="">
+                        <p>
+                            National Center for Atmospheric
+                            Research, USA,
+                            20th October 1967
+                        </p>
+                    </a>
+                </li>
+                <li class="carousel__item section__link">
+                    <a href="#">
+                        <img src="/public/img/Musee_Suzouh.webp" 
+                            alt="">
+                        <p>
+                            Suzhou Museum,
+                            Suzhou,
+                            China,
+                            1960
+                        </p>
+                    </a>
+                </li>
+                <li class="carousel__item section__link">
+                    <a href="#">
+                        <img src="/public/img/Hotel_de_ville_de_Dallas.webp" 
+                            alt="">
+                        <p>
+                            Dallas City Hall,
+                            Dallas,
+                            Texas,
+                            USA,
+                            1978
+                        </p>
+                    </a>
+                </li>
+                <li class="carousel__item section__link">
+                    <a href="#">
+                        <img src="/public/img/Pyramide_Louvre.webp" 
+                            alt="">
+                        <p>
+                            Pyramid of the
+                            Pyramid,
+                            Paris, France
+                            France,
+                            1988
+                        </p>
+                    </a>
+                </li>
+                <li class="carousel__item section__link">
+                    <a href="#">
+                        <img src="/public/img/Bank_of_China_tower.webp" 
+                            alt="">
+                        <p>
+                            Bank of China Tower,
+                            Hong Kong,
+                            17 May 1990
+                        </p>
+                    </a>
+                </li>
+                <li class="carousel__item section__link">
+                    <a href="#">
+                        <img src="/public/img/Morton_H_Meyerson_Symphony_Center.webp" 
+                            alt="">
+                        <p>
+                            Morton H. Meyerson Symphony
+                            Center,
+                            Dallas,
+                            Texas,
+                            USA,
+                            1992
+                        </p>
+                    </a>
+                </li>
+                <li class="carousel__item section__link">
+                    <a href="#">
+                        <img src="/public/img/Musee_d-Art_islamique_de_Doha.webp" 
+                            alt="">
+                        <p>
+                            Doha Museum of Islamic Art,                            
+                            Doha,Qatar,
+                            22 November 20082
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </header>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__start">
+            <a href="/en/index.html">
+                <img src="/public/icones/logo_sans_fond.svg" alt="logo-transparent">
+            </a>
+            <ul class="footer__list">
+                <li class="footer__link">
+                    <a href="/en/mentions.html">
+                        Ticketing
+                    </a>
+                </li>
+                <li class="footer__link">
+                    <a href="/en/works.html">
+                        Works
+                    </a>
+                </li>
+                <li class="footer__link">
+                    <a href="/en/architect.html">
+                        Architect
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__end">
+            <span>
+                <a href="/en/contact.html">
+                    <p>Contact</p>
+                </a>
+                <a href="/en/mentions.html">
+                    <p>Legal Notice</p>
+                </a>
+            </span>
+            <div class="footer__container-btn">
+                <a class="footer__container-reseaux" href="#">
+                    <img src="/public/icones/icon_twitter.svg" alt="twitter">
+                    <img src="/public/icones/icon_instagram.svg" alt="instagram">
+                </a>
+                <p class="footer__mentions">©2023 Marco Poilbois</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

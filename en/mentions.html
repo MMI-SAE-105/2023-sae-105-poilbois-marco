@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Notice</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body x-data="{ isOpen: false }">
+    
+    <header class="header">
+        <div class="header__start">
+            <a href="/en/index.html">
+                <img src="/public/icones/logo.svg" alt="logo">
+            </a>
+        </div>
+        <div class="header__end">
+            <a href="/fr/mentions.html">
+                <img src="/public/icones/icon_drapeau_france.svg" alt="flag-fr">
+            </a>
+            <a href="#"
+                @click="isOpen = !isOpen">
+                <img src="/public/icones/icon_menu_burger.svg" alt="menu-burger">
+            </a>
+        </div>
+
+        <nav class="navbar" x-show="isOpen">
+            <ul class="navbar__list">
+                <li>
+                    <a href="/en/ticketing.html">
+                        Ticketing
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/works.html">
+                        Works
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/architect.html">
+                        Architect
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/contact.html">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/mentions.html"">
+                        Legal Notice
+                    </a>
+                </li>
+            </ul>
+            <a class="navbar__icone" href="#"
+                @click="isOpen = !isOpen"
+            >
+                <img src="/public/icones/icon_croix.svg" alt="annule">
+            </a>
+        </nav>
+    </header>
+
+    <section class="section">
+        <header class="section__header">
+            <h1 class="section">
+                Legal Notice
+            </h1>
+            <div class="section__under-title">
+                <div>
+                    <h3>Intellectual property</h3>
+                    <p class="section section__paragraph">
+                        The entire content of this site,
+                        including, but not limited to, text,
+                        graphics, logos and icons, is the exclusive property of
+                        the exclusive property of I Am Pei or its partners
+                        partners and is protected by the laws in force       
+                        relating to intellectual property.
+                    
+                        Any reproduction, modification, distribution or
+                        exploitation, in whole or in part, of the content of the
+                        site, without prior written authorisation from I Am 
+                        Pei, is strictly prohibited and may result in
+                        give rise to legal proceedings.
+                    </p>
+                </div>
+                <div>
+                    <h3>Protection of personal data</h3>
+                    <p class="section section__paragraph">
+                        The information collected on this site is
+                        processed for the purpose of selling
+                        selling websites. In accordance with the law
+                        2004-575 of 21 June 2004 for confidence 
+                        in the digital economy, you have the right to
+                        access, rectification and deletion rights
+                        of your personal data. To exercise these
+                        please contact us at the following address
+                        iampei.marcopoilbois.fr .
+                    </p>
+                </div>
+                <div>
+                    <h3>Cookies</h3>
+                    <p class="section section__paragraph">
+                        This site may use cookies
+                        to improve the user experience. By
+                        browsing this site, you consent to the
+                        the use of these cookies.
+                    </p>
+                </div>
+                <div>
+                    <h3>External links</h3>
+                    <p class="section section__paragraph">
+                        The site may contain links to other websites.
+                        websites. I Am Pei accepts no responsibility for 
+                        for the content of these sites and cannot be held 
+                        responsible for any direct or indirect damage 
+                        resulting from the use of these links.
+                    </p>
+                </div>
+                <div>
+                    <h3>Modification of legal notices</h3>
+                    <p class="section section__paragraph">
+                        I Am Pei reserves the right to modify the
+                        legal information at any time. The 
+                        users of the site are therefore invited to 
+                        to consult them regularly.
+                    </p>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__start">
+            <a href="/en/index.html">
+                <img src="/public/icones/logo_sans_fond.svg" alt="logo-transparent">
+            </a>
+            <ul class="footer__list">
+                <li class="footer__link">
+                    <a href="/en/mentions.html">
+                        Ticketing
+                    </a>
+                </li>
+                <li class="footer__link">
+                    <a href="/en/works.html">
+                        Works
+                    </a>
+                </li>
+                <li class="footer__link">
+                    <a href="/en/architect.html">
+                        Architect
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__end">
+            <span>
+                <a href="/en/contact.html">
+                    <p>Contact</p>
+                </a>
+                <a href="/en/mentions.html">
+                    <p>Legal Notice</p>
+                </a>
+            </span>
+            <div class="footer__container-btn">
+                <a class="footer__container-reseaux" href="#">
+                    <img src="/public/icones/icon_twitter.svg" alt="twitter">
+                    <img src="/public/icones/icon_instagram.svg" alt="instagram">
+                </a>
+                <p class="footer__mentions">©2023 Marco Poilbois</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

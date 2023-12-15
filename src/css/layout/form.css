@@ -29,7 +29,8 @@
 }
 
 .section__form,
-.btn {
+.btn,
+.choix_langue {
     display: grid;
     justify-content: center;
     font-size: var(--text-xl);

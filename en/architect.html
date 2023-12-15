@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architect</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body x-data="{ isOpen: false }">
+
+    <header class="header">
+        <div class="header__start">
+            <a href="/en/index.html">
+                <img src="/public/icones/logo.svg" alt="logo">
+            </a>
+        </div>
+        <div class="header__end">
+            <a href="/fr/architecte.html">
+                <img src="/public/icones/icon_drapeau_france.svg" alt="flag-fr">
+            </a>
+            <a href="#"
+                @click="isOpen = !isOpen"
+            >
+                <img src="/public/icones/icon_menu_burger.svg" alt="menu-burger">
+            </a>
+        </div>
+
+        <nav class="navbar" x-show="isOpen">
+            <ul class="navbar__list">
+                <li>
+                    <a href="/en/ticketing.html">
+                        Ticketing
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/works.html">
+                        Works
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/architect.html">
+                        Architect
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/contact.html">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/mentions.html"">
+                        Legal Notice
+                    </a>
+                </li>
+            </ul>
+            <a class="navbar__icone" href="#"
+                @click="isOpen = !isOpen"
+            >
+                <img src="/public/icones/icon_croix.svg" alt="annule">
+            </a>
+        </nav>
+    </header>
+
+    <section class="section">
+        <header class="section__header">        
+            <h1>Ieoh Ming Pei</h1>
+            <div class="section__card">
+                <a class="section__img" href="#">
+                    <img src="/public/img/Ieoh_Ming_Pei.webp" alt="architecte">
+                </a>
+                <caption>
+                    "Architecture is the correct and magnificent skilful interplay
+                    of volumes assembled under light."
+                </caption>
+                <p class="section__caption-autor">
+                    - Ieoh Ming Pei
+                </p>
+            </div>
+        </header>
+    </section>
+
+    <section class="section">
+        <header class="section__header">        
+            <h2>
+                Ieoh Ming Pei,
+                a visionary architect
+            </h2>
+            <p class="section__intro section__paragraph">
+                Ieoh Ming Pei, known as I. M. Pei,
+                was an American architect of Chinese origin. 
+                Founder of prestigious firms such as I. 
+                M. Pei & Associates and Pei Cobb Freed & Partners. 
+                Partners, he left an indelible mark on the 
+                the world of architecture.
+            </p>
+        </header>
+    </section>
+
+    <section class="section">
+        <header class="section__header">        
+            <h2>Biography</h2>
+            <p class="section__intro section__paragraph">
+                Born on 26 April 1917 in Canton, China. 
+                Died on 16 May 2019 in New York, USA.
+                United States
+            </p>
+        </header>
+    </section>
+
+    <section class="section">
+        <header class="section__header">        
+            <h2>Training</h2>
+            <p class="section__intro section__paragraph">
+                MIT (1940),
+                Harvard University (1946)
+            </p>
+        </header>
+    </section>
+
+    <section class="section">
+        <header class="section__header">        
+            <h2>Main achievements</h2>
+            <p class="section__intro section__paragraph">
+                Pyramid of the Louvre,
+
+                National Center for Atmospheric Research,
+
+                Bank of China Tower,
+
+                Doha Museum of Islamic Art
+            </p>
+            <p class="section__intro section__paragraph">
+                See more
+            </p>
+        </header>
+    </section>
+
+    <section class="section">
+        <header class="section__header">        
+            <h2>Distinctions</h2>
+            <p class="section__intro section__paragraph">
+                AIA Gold Medal (1979),
+
+                Pritzker Prize (1983),
+
+                Praemium Imperiale (1989),
+
+                Presidential Medal of Freedom (1992),
+
+                Royal Gold Medal for Architecture (2010)
+            </p>
+        </header>
+    </section>
+
+    <section class="section">
+        <header class="section__header">        
+            <h2>Career path</h2>
+            <p class="section__intro section__paragraph">
+                Recruited by William Zeckendorf in 1948, Pei
+                founded his own firm, I. M. Pei & Associates, in
+                1955.
+                
+                He designed iconic works such as
+                the Louvre Pyramid and the Bank of China Tower.
+                China Tower.
+
+                Awarded the Pritzker Prize in 1983, considered to be
+                the "Nobel Prize of architecture".
+            </p>
+        </header>
+    </section>
+
+    <section class="section">
+        <header class="section__header">        
+            <h2>Youth and Training</h2>
+            <p class="section__intro section__paragraph">
+                Born in Canton, Pei moved to Shanghai in
+                1927, where he was influenced by the architectural
+                architectural diversity and the gardens of Suzhou.
+
+                Studies at the University of Pennsylvania and
+                MIT, marked by his interest in 
+                modern architecture.
+            </p>       
+        </header>
+    </section>
+
+    <section class="section">
+        <header class="section__header">        
+            <h2>Personal legacy</h2>
+            <p class="section__intro section__paragraph">
+                Family: Married to Eileen Loo, father of four
+                children.
+
+                Childhood marked by the loss of his mother and
+                complex family relationships.
+            </p>
+        </header>
+    </section>
+
+    <section class="section">
+        <header class="section__header">        
+            <h2>Legacy and Recognition</h2>
+            <p class="section__intro section__paragraph">
+                Leaves a significant legacy with innovative
+                innovative buildings around the
+                around the world.
+
+                Awarded numerous distinctions including the
+                AIA Gold Medal and the Praemium
+                Imperiale.
+            </p>
+        </header>
+    </section>
+
+    <section class="section">
+        <header class="section__header">        
+            <h2>Retirement and Consultation</h2>
+            <p class="section__intro section__paragraph">
+                Officially retired in 1990, but continued
+                continues to work as a consultant for his sons
+                firm, Pei Partnership Architects. 
+            </p>
+        </header>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__start">
+            <a href="/en/index.html">
+                <img src="/public/icones/logo_sans_fond.svg" alt="logo-transparent">
+            </a>
+            <ul class="footer__list">
+                <li class="footer__link">
+                    <a href="/en/mentions.html">
+                        Ticketing
+                    </a>
+                </li>
+                <li class="footer__link">
+                    <a href="/en/works.html">
+                        Works
+                    </a>
+                </li>
+                <li class="footer__link">
+                    <a href="/en/architect.html">
+                        Architect
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__end">
+            <span>
+                <a href="/en/contact.html">
+                    <p>Contact</p>
+                </a>
+                <a href="/en/mentions.html">
+                    <p>Legal Notice</p>
+                </a>
+            </span>
+            <div class="footer__container-btn">
+                <a class="footer__container-reseaux" href="#">
+                    <img src="/public/icones/icon_twitter.svg" alt="twitter">
+                    <img src="/public/icones/icon_instagram.svg" alt="instagram">
+                </a>
+                <p class="footer__mentions">©2023 Marco Poilbois</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
