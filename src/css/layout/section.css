@@ -2,12 +2,15 @@
     padding-bottom: 30px;
 }
 
-.section__header:not(.section__img) {
+.section__header:not(.section__img),
+.section__under-title,
+.section__paragraph,
+.section__img {
     padding-left: 20px;
 }
 
-.section__under-title {
-    padding-left: 30px;
+.section__paragraph {
+    padding-right: 30px;
 }
 
 .section__intro,
@@ -52,4 +55,18 @@
     margin-left: 60px;
     margin-bottom: 40px;
     padding: 10px;
+}
+
+.section__caption-autor {
+    display: flex;
+    justify-content: end;
+}
+
+.section__card {
+    display: grid;
+    width: 0;
+    gap: 10px;
+    margin-bottom: 30px;
+    font-style: italic;
+
 }
