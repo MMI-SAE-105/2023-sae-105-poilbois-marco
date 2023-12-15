@@ -1,0 +1,58 @@
+#email,
+#object,
+#mailbox {
+    width: 230px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#email,
+#object {
+    height: 20px;
+}
+
+#mailbox {
+    height: 150px;
+}
+
+#email::placeholder,
+#object::placeholder,
+#mailbox::placeholder {
+    font-size: var(--text-rg);
+}
+
+.darkMode {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.section__form,
+.btn {
+    display: grid;
+    justify-content: center;
+    font-size: var(--text-xl);
+}
+
+.btn {
+    margin-top: 50px;
+    scale: 0.85;
+    z-index: -1;
+}
+
+.form__border {
+    border: 1px solid var(--white);
+    background-color: var(--white);
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.form__triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--white);
+    display: flex;
+}

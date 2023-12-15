@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body x-data="{ isOpen: false }"> 
+<body class="darkMode" x-data="{ isOpen: false }"> 
     
     <header class="header">
         <div class="header__start">
@@ -62,28 +62,48 @@
         </nav>
     </header>
 
-    <section>
-        <header>
-            <h1>Contact</h1>
-            <form action="#">
+    <section class="section">
+        <header class="section__header">
+            <h1 class="darkMode">
+                Contact
+            </h1>
+            <form class="section__form" action="#">
                 <p>
                     <label for="email">Email<br>
-                        <input type="email" id="email" name="email" value="">
+                        <input type="email" 
+                            placeholder="henrydupont@exemple.fr" 
+                            id="email" 
+                            name="email" 
+                            value="">
                     </label>
                 </p>
                 <p>
                     <label for="object">Objet<br>
-                        <input type="text" id="object" name="object" value="">
+                        <input type="text"
+                            placeholder="Problème" 
+                            id="object" 
+                            name="object" 
+                            value="">
                     </label>
                 </p>
                 <p>
                     <label for="mailbox">Message<br>
-                        <input type="text" id="mailbox" name="mailbox" value="">
+                        <input type="text"
+                            placeholder="Bonjour, ..." 
+                            id="mailbox" 
+                            name="mailbox" 
+                            value="">
                     </label>
-                </p>
+                </p>  
+                
+                <button class="btn">
+                    Envoyer
+                </button>
+
             </form>
 
-            <button>Envoyer</button>
+            <div class="form__border"></div>
+            <div class="form__triangle"></div>
 
         </header>
     </section>
