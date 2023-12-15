@@ -8,6 +8,7 @@ h1 {
     font-family: var(--font-Batang);
     font-size: var(--title-xxxl);
     color: var(--brown);
+    padding-top: 130px;
 }
 
 h2 {
@@ -26,3 +27,4 @@ button {
     border-radius: 5px;
     padding: 10px 20px;
 }
+

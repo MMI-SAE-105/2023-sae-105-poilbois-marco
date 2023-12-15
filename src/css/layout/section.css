@@ -1,0 +1,55 @@
+.section {
+    padding-bottom: 30px;
+}
+
+.section__header:not(.section__img) {
+    padding-left: 20px;
+}
+
+.section__under-title {
+    padding-left: 30px;
+}
+
+.section__intro,
+.date,
+.section__img {
+    display: flex;
+    justify-content: center;
+}
+
+.date {
+    font-size: var(--text-md);
+}
+
+.section__intro-horaire {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--black);
+}
+
+.highlight__saumon {
+    background-color: var(--saumon);
+    width: 85%;   
+}
+
+.highlight__yellow {
+    background-color: var(--yellow);
+    width: 50%;
+    padding-left: 5px;
+}
+
+.section__frise {
+    border: 1px solid none;
+    background-color: var(--black);
+    width: 40px;
+    display: grid;
+    margin-bottom: -30px; 
+}
+
+.section__caption {
+    display: flex;
+    justify-content: end;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
