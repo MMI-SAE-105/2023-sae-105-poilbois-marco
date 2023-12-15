@@ -1,0 +1,36 @@
+.article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.article__card {
+    border: 1px solid transparent;
+    color: var(--white);
+    padding: 10px;
+    width: 65%;
+    background-color: var(--black);
+}
+
+.article__card-background {
+    border: 1px solid transparent;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.article__card-saumon {
+    box-shadow: -10px -10px 0px 4px var(--saumon);
+}
+
+.article__card-yellow {
+    box-shadow: -10px -10px 0px 4px var(--yellow);
+}
+
+.article__mention {
+    padding-top: 50px;
+    color: var(--dark);
+}
+
+.article__mention-details {
+    font-style: var(--text-md);
+}
