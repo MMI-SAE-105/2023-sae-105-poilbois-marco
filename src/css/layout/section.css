@@ -30,6 +30,11 @@
     color: var(--black);
 }
 
+.section__link {
+    list-style: none;
+    text-decoration: none;
+}
+
 .highlight__saumon {
     background-color: var(--saumon);
     width: 85%;   
