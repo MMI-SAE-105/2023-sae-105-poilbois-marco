@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oeuvres</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body>
+<body x-data="{ isOpen: false }">
 
     <header class="header">
         <div class="header__start">
-            <a href="#">
+            <a href="/fr/index.html">
                 <img src="/public/icones/logo.svg" alt="logo">
             </a>
         </div>
@@ -18,23 +19,47 @@
             <a href="#">
                 <img src="/public/icones/icon_drapeau_angleterre.svg" alt="flag-en">
             </a>
-            <a href="#">
+            <a href="#"
+                @click="isOpen = !isOpen"
+            >
                 <img src="/public/icones/icon_menu_burger.svg" alt="menu-burger">
             </a>
         </div>
 
-        <!-- <nav>
-            <a href="#">
+        <nav class="navbar" x-show="isOpen">
+            <ul class="navbar__list">
+                <li>
+                    <a href="/fr/billetterie.html">
+                        Billetterie
+                    </a>
+                </li>
+                <li>
+                    <a href="/fr/oeuvres.html">
+                        Oeuvres
+                    </a>
+                </li>
+                <li>
+                    <a href="/fr/architecte.html">
+                        Architecte
+                    </a>
+                </li>
+                <li>
+                    <a href="/fr/contact.html">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="/fr/mentions.html">
+                        Mentions légales
+                    </a>
+                </li>
+            </ul>
+            <a class="navbar__icone" href="#"
+                @click="isOpen = !isOpen"
+            >
                 <img src="/public/icones/icon_croix.svg" alt="annule">
             </a>
-            <ul>
-                <li><a href="#">Billetterie</a></li>
-                <li><a href="#">Oeuvres</a></li>
-                <li><a href="#">Architecte</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Mentions légales</a></li>
-            </ul>
-        </nav> -->
+        </nav>
     </header>
 
     <section>
@@ -45,19 +70,35 @@
 
     <footer class="footer">
         <div class="footer__start">
-            <a href="#">
+            <a href="/fr/index.html">
                 <img src="/public/icones/logo_sans_fond.svg" alt="logo-transparent">
             </a>
             <ul class="footer__list">
-                <li class="footer__link">Billetterie</li>
-                <li class="footer__link">Oeuvres</li>
-                <li class="footer__link">Architecte</li>
+                <li class="footer__link">
+                    <a href="/fr/billetterie.html">
+                        Billetterie
+                    </a>
+                </li>
+                <li class="footer__link">
+                    <a href="/fr/oeuvres/">
+                        Oeuvres
+                    </a>
+                </li>
+                <li class="footer__link">
+                    <a href="/fr/architecte.html">
+                        Architecte
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="footer__end">
             <span>
-                <p>Contact</p>
-                <p>Mentions légales</p>
+                <a href="/fr/contact.html">
+                    <p>Contact</p>
+                </a>
+                <a href="/fr/mentions.html">
+                    <p>Mentions légales</p>
+                </a>
             </span>
             <div class="footer__container-btn">
                 <a class="footer__container-reseaux" href="#">
